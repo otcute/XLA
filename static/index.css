@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+#uploadForm {
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
+
+.half {
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.half input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 0px;
+    height: 100%;
+}
+
+.button {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-show {
+    background-color: aquamarine;
+}
+
+#display_image{
+    border: 1px solid black;
+    height: 475px;
+    background-position: center;
+    background-size: cover;
+}
